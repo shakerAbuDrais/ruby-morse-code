@@ -42,11 +42,5 @@ def decode_word(word)
   print "#{@word_decoder} "
 end
 
-def decode_message(message)
-  @words = message.split('   ')
-  @words.each do |word|
-    decode_word(word)
-  end
-end
 
 decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
